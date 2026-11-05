@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ezra Kiprop Ndiema | Personal Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.65;
+            color: #402032;
+            background: #eef6f8;
+        }
+
+        header, footer {
+            background: #12304a;
+            color: white;
+            padding: 16px 5%;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 13px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background: #23658c;
+        }
+
+        .name-banner {
+            overflow: hidden;
+            white-space: nowrap;
+            background: #dff2ff;
+            color: #12304a;
+            font-size: 48px;
+            font-weight: bold;
+            padding: 8px 0;
+        }
+
+        .name-banner span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: move-name 14s linear infinite;
+        }
+
+
+        main {
+            width: min(1000px, 92%);
+            margin: 25px auto;
+        }
+
+        section {
+            background: white;
+            margin: 22px 0;
+            padding: 26px;
+            border-radius: 10px;
+            box-shadow: 0 4px 18px #12304a18;
+            scroll-margin-top: 15px;
+        }
+
+        h1, h2 {
+            color: #12304a;
+        }
+
+        .profile-photo {
+            width: 170px;
+            height: 190px;
+            object-fit: cover;
+            border: 2px solid #168dcc;
+            border-radius: 8px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px solid #8ca7b7;
+            margin: 22px 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+        }
+
+        .info-card {
+            background: #f2f8fb;
+            border-left: 4px solid #168dcc;
+            padding: 13px;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid green;
+            border-collapse: collapse;
+            margin: 18px 0;
+        }
+
+        th, td {
+            border: 1px solid green;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: lightblue;
+            color: #12304a;
+        }
+
+        .contact-form {
+            border: 2px solid #168dcc;
+            padding: 18px;
+            max-width: 650px;
+            background: #fbfdff;
+        }
+
+        label {
+            display: block;
+            margin: 12px 0 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: min(100%, 420px);
+            padding: 10px;
+            border: 1px solid #9aaeb9;
+            border-radius: 3px;
+            font: inherit;
+        }
+
+        textarea {
+            width: 100%;
+            max-width: 520px;
+            min-height: 140px;
+        }
+
+        button {
+            background: #16803c;
+            color: white;
+            border: 0;
+            padding: 10px 18px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .hobbies-section {
+            background: lightblue;
+        }
+
+        footer p {
+            color: #7ff0a0;
+            margin: 12px 0 0;
+        }
+
+        a {
+            color: #075c91;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                padding: 18px;
+            }
+
+            .name-banner {
+                font-size: 34px;
+            }
+
+            nav {
+                gap: 4px;
+            }
+
+            nav a {
+                padding: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP MENU -->
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#experience">Personal Experience</a>
+            <a href="#contacts">Contacts</a>
+            <a href="#hobbies">Hobbies</a>
+        </nav>
+    </header>
+
+    <!-- MOVING NAME -->
+    <div class="name-banner">
+        <span>Ezra Kiprop Ndiema</span>
+    </div>
+
+    <main>
+
+        <!-- HOME PAGE -->
+        <section id="home">
+
+            <img src="ezra.png"
+                 alt="Photo of Ezra Kiprop Ndiema"
+                 class="profile-photo">
+
+            <hr>
+
+            <h1>Home</h1>
+
+            <h2>About Me</h2>
+
+            <p>
+                <strong>My name is Ezra Kiprop Ndiema.</strong>
+                I am a Bachelor of Information Technology student
+                at Kisii University, Kenya. I am motivated, friendly,
+                dependable and punctual, and I am willing to work
+                flexible hours, including weekends.
+            </p>
+
+            <p>
+                I completed my secondary education at Teremi High School
+                and my primary education at Kimaswa Hill Academy.
+                I have experience working in the computer laboratory
+                at Teremi High School, where I received the award
+                of Best Lab Tech.
+            </p>
+
+            <p>
+                I work collaboratively with other people and can also
+                carry out duties with or without supervision.
+                My skills include communication, teamwork,
+                Microsoft Office applications and Java programming.
+            </p>
+
+            <p>
+                After completing my course, I hope to use the knowledge
+                and practical skills gained in Information Technology
+                to contribute to the development and support of useful
+                computer systems while continuing to grow professionally.
+            </p>
+
+            <div class="info-grid">
+
+                <div class="info-card">
+                    <strong>Course</strong><br>
+                    Bachelor of Information Technology
+                </div>
+
+                <div class="info-card">
+                    <strong>Institution</strong><br>
+                    Kisii University
+                </div>
+
+                <div class="info-card">
+                    <strong>Location</strong><br>
+                    Bungoma, Kenya
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PERSONAL EXPERIENCE / CV -->
+        <section id="experience">
+
+            <h1>Personal Experience</h1>
+
+            <h2>Curriculum Vitae</h2>
+
+            <h2>Personal Information</h2>
+
+            <div class="info-grid">
+
+                <div class="info-card">
+                    <strong>Name:</strong><br>
+                    Ezra Kiprop Ndiema
+                </div>
+
+                <div class="info-card">
+                    <strong>Location:</strong><br>
+                    Bungoma, Kenya
+                </div>
+
+                <div class="info-card">
+                    <strong>Telephone:</strong><br>
+                    0704088842 / 0782883604
+                </div>
+
+                <div class="info-card">
+                    <strong>Email:</strong><br>
+                    <a href="mailto:skippezra@gmail.com">
+                        skippezra@gmail.com
+                    </a>
+                </div>
+
+                <div class="info-card">
+                    <strong>Date of birth:</strong><br>
+                    7 January 2002
+                </div>
+
+                <div class="info-card">
+                    <strong>Marital status:</strong><br>
+                    Single
+                </div>
+
+                <div class="info-card">
+                    <strong>Languages:</strong><br>
+                    English and Swahili
+                </div>
+
+            </div>
+
+            <h2>Personal Profile</h2>
+
+            <p>
+                I am a motivated and friendly worker with a flexible
+                schedule, willing to work weekends, dependable and punctual.
+                I work collaboratively with team members in any environment,
+                with or without supervision.
+            </p>
+
+
+            <!-- EDUCATION BACKGROUND -->
+            <h2>Education Background</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Institutions Attended</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>2025–Current</td>
+                        <td>
+                            Kisii University —
+                            Bachelor of Information Technology
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2021–2024</td>
+                        <td>
+                            Teremi High School —
+                            Kenya Certificate of Secondary Education (KCSE)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2012–2020</td>
+                        <td>
+                            Kimaswa Hill Academy —
+                            Kenya Certificate of Primary Education (KCPE)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <!-- WORK EXPERIENCE -->
+            <h2>Work Experience</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Institution</th>
+                        <th>Award Given</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>7 January 2025–10 April 2025</td>
+                        <td>Teremi High School Computer Lab</td>
+                        <td>Best Lab Tech</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <!-- SKILLS -->
+            <h2>Skills</h2>
+
+            <ul>
+                <li>
+                    <strong>Communication skills:</strong>
+                    Able to communicate clearly and concisely,
+                    verbally and in writing, and to listen attentively.
+                </li>
+
+                <li>
+                    <strong>Teamwork and collaboration:</strong>
+                    Able to work effectively with colleagues and
+                    maintain positive working relationships.
+                </li>
+
+                <li>
+                    <strong>Microsoft Office:</strong>
+                    Knowledge of Microsoft Word, Excel and PowerPoint.
+                </li>
+
+                <li>
+                    <strong>Java programming:</strong>
+                    Knowledge and practical ability in Java programming.
+                </li>
+            </ul>
+
+
+            <!-- REFEREES -->
+            <h2>Referees</h2>
+
+            <ul>
+                <li>
+                    <strong>Edwin Juma</strong> —
+                    Senior Lab Tech, Teremi High School Computer Lab.
+                    Tel: 0719346618.
+                </li>
+
+                <li>
+                    <strong>Winros Chebet</strong> —
+                    Computer Department, Kisii University.
+                    Tel: 0728266202.
+                </li>
+            </ul>
+
+        </section>
+
+
+        <!-- CONTACTS PAGE -->
+        <section id="contacts">
+
+            <h1>Contacts</h1>
+
+            <div class="info-grid">
+
+                <div class="info-card">
+                    <strong>Telephone</strong><br>
+                    <a href="tel:0704088842">0704088842</a><br>
+                    <a href="tel:0782883604">0782883604</a>
+                </div>
+
+                <div class="info-card">
+                    <strong>Email Address</strong><br>
+                    <a href="mailto:skippezra@gmail.com">
+                        skippezra@gmail.com
+                    </a><br>
+
+                    <a href="mailto:skippezra@gmail.com">
+                        Email me
+                    </a>
+                </div>
+
+                <div class="info-card">
+                    <strong>Location</strong><br>
+                    Bungoma, Kenya
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h2>Send Me a Message</h2>
+
+            <form class="contact-form"
+                  action="mailto:skippezra@gmail.com"
+                  method="post"
+                  enctype="text/plain">
+
+                <label for="visitor-name">
+                    Enter your Name:
+                </label>
+
+                <input type="text"
+                       id="visitor-name"
+                       name="Name"
+                       required>
+
+
+                <label for="visitor-email">
+                    E-mail address*:
+                </label>
+
+                <input type="email"
+                       id="visitor-email"
+                       name="Email"
+                       required>
+
+
+                <label for="message-subject">
+                    Message Subject:
+                </label>
+
+                <input type="text"
+                       id="message-subject"
+                       name="Subject">
+
+
+                <label for="visitor-message">
+                    Enter your Message*:
+                </label>
+
+                <textarea id="visitor-message"
+                          name="Message"
+                          required></textarea>
+
+
+                <p>
+                    <label style="font-weight: normal;">
+
+                        <input type="checkbox"
+                               name="Send a copy"
+                               value="Yes">
+
+                        E-mail a copy of this message to your own address.
+
+                    </label>
+                </p>
+
+                <button type="submit">Send</button>
+
+            </form>
+
+            <p>
+                <small>
+                    Note: The form opens the visitor's configured
+                    email application. Sending directly from a website
+                    requires a server-side form handler.
+                </small>
+            </p>
+
+        </section>
+
+
+        <!-- HOBBIES PAGE -->
+        <section id="hobbies" class="hobbies-section">
+
+            <h1>Hobbies</h1>
+
+            <h2>Ordered List</h2>
+
+            <ol>
+                <li>Reading novels and articles</li>
+                <li>Watching science and technology series</li>
+                <li>Watching documentaries and discoveries</li>
+                <li>Programming</li>
+            </ol>
+
+
+            <h2>Unordered List</h2>
+
+            <ul>
+                <li>Reading novels and articles</li>
+                <li>Watching science and technology series</li>
+                <li>Watching documentaries and discoveries</li>
+                <li>Programming</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+
+</body>
+</html>
